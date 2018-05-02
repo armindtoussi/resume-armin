@@ -1,0 +1,89 @@
+/* Site border */
+
+
+.content-window {
+    width: 95%;
+    background: yellow;
+    margin: 0 50px 50px 50px;
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 320px) {
+    .content-window {
+        margin: 0 auto;
+        width: 100%; 
+        padding-top: 0;
+    }
+
+    .top,
+    .bottom,
+    .left,
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top {
+        height: 40px;
+        background: #445E93;
+        width: 100%;
+
+        display: block;
+        position: fixed;
+        top: 0;
+
+    }
+    .bottom {
+        height: 40px;
+        background: #445E93;
+        width: 100%;
+
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+    .left {
+        height: 100%;
+        background: #445E93;
+        width: 40px;
+
+        display: block;
+        position: fixed;
+        left: 0;
+    }
+    .right {
+        height: 100%;
+        background: #445E93;
+        width: 40px;
+        
+        display: block;
+        position: fixed;
+        right: 0;
+    }
+
+    .content-window {
+        width: 92%;
+        background: yellow;
+        margin: 0 40px 40px 40px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content-window {
+        width: 93%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content-window {
+        width: 94%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .content-window {
+        width: 96%;
+    }
+}
