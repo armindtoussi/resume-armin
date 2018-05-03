@@ -55,6 +55,12 @@
         position: fixed;
         right: 0;
     }
+    .top,
+    .bottom,
+    .left,
+    .right {
+        z-index: 1020;
+    }
 
     .content-window {
         width: 92%;

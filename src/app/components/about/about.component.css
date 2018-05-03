@@ -10,6 +10,7 @@
 
 .about-section {
     margin-left: 10px;
+    margin-top: 30px;
 }
 
 .article-intro {
@@ -18,7 +19,20 @@
     text-align: justify;
 }
 
+hr {
+    border: 1px solid #F4A460;
+    margin-top: 0;
+}
 
+.article-objectives>p {
+    text-align: justify;
+}
+.article-objectives>h3 {
+    margin-bottom: 5px;
+}
+
+/* Media screen queries. */
+/* Min Queries. */
 @media screen and (min-width: 320px) {
     .about-title {
         font-size: 2.9em;
@@ -50,6 +64,15 @@
         margin-left: 50px;
         margin-right: 50px;
     }
+
+    .article-objectives {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .title-hr {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -60,18 +83,39 @@
     .about-subtitle {
         text-align: left;
         margin-left: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .title-hr {
+        margin-left: 10px;
+        margin-right: 25px;
     }
 
     .about-section>img {
         margin-left: 10px;
+        margin-right: 14px;
+        margin-bottom: 15px;
         float: left;
     }
     .article-intro {
         margin-left: 275px;
-        margin-bottom: 115px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+    }
+
+    .article-objectives {
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+    .article-objectives>h3 {
+        margin-top: 10px;
+    }
+
+    .article-objectives>hr {
+        margin-left: 266px;
+        margin-right: 0px;
     }
 }
+
 
 @media screen and (min-width: 992px) {
     .about-title {
@@ -81,6 +125,10 @@
     .about-subtitle {
         text-align: center;
     }
+    .title-hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
 
     .about-section {
         margin-left: 0;
@@ -89,11 +137,20 @@
         float: none;
         display: block;
         margin: 0 auto;
-        margin-bottom: 25px;
+        margin-bottom: 18px;
     }
     .article-intro {
         margin-left: 0;
         margin: 0 auto;
+    }
+
+    .article-objectives {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .article-objectives>hr {
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 
@@ -113,11 +170,43 @@
     }
     .article-intro {
         text-align: unset;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (min-width: 1660px) {
     .article-intro {
         text-align: justify;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .article-intro {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (min-width: 1771px) {
+    .article-intro {
+        margin-bottom: 65px;
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .article-intro {
+        margin-bottom: 0;
+    }
+    .article-objectives>hr {
+        margin-left: 266px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .article-intro {
+        margin-bottom: 0;
+    }
+    .article-objectives>hr {
+        margin-left: 266px;
     }
 }
