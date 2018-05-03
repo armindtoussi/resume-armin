@@ -1,0 +1,125 @@
+
+.about-title {
+    font-family: 'Lobster', cursive;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.about-section {
+    margin-left: 10px;
+}
+
+.about-section>img {
+    float: left;
+}
+.about-section>aside {
+    font-size: 1.2em;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+
+@media screen and (min-width: 320px) {
+    .about-title {
+        font-size: 2.9em;
+        text-align: center;
+    }
+    .about-subtitle {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.55rem;
+    }
+
+    .about-section {
+        margin-left: 0;
+    }
+    .about-section>img {
+        float:none;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .about-section>aside {
+        margin-left: 0;
+
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .about-section>aside {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-title { 
+        font-size: 4em;
+        text-align: left;
+    }
+    .about-subtitle {
+        text-align: left;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .about-section>img {
+        margin-left: 10px;
+        float: left;
+    }
+    .about-section>aside {
+        margin-left: 275px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-title {
+        font-size: 2.9em;
+        text-align: center;
+    }
+    .about-subtitle {
+        text-align: center;
+    }
+
+    .about-section {
+        margin-left: 0;
+    }
+    .about-section>img { 
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .about-section>aside {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .about-title {
+        font-size: 4em;
+        text-align: left;
+    }
+    .about-subtitle {
+        text-align: left;
+    }
+
+    .about-section>img {
+        float:left;
+        margin-right: 20px;
+    }
+    .about-section>aside {
+        text-align: unset;
+    }
+}
+
+@media screen and (min-width: 1660px) {
+    .about-section>aside {
+        text-align: justify;
+    }
+}
