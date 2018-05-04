@@ -1,0 +1,35 @@
+.about-title {
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+
+    margin-top: 20px;
+}
+
+.about-title>small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.4em;
+}
+
+hr {
+    border: 1px solid #F4A460;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 320px) {
+    .about-title {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .about-title {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-title {
+        font-size: 4em;
+    }
+}
