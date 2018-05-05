@@ -1,0 +1,79 @@
+.education-content>h1 {
+    margin-bottom: 40px;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.container>div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.education-card {
+    position: relative;
+}
+.education-card>hr {
+    border: 1px solid #F4A460;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.edu-description {
+    text-align: justify;
+}
+.school-link {
+    color: #445E93;
+}
+.school-link:hover { 
+    color: #F4A460;
+}
+.school-link:hover,
+.school-link:active,
+.school-link:visited,
+.school-link:link {
+    text-decoration: none;
+}
+
+.education-card-spacing {
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width: 320px) {
+
+    .education-card>h4 {
+        margin-bottom: 0;
+    }
+    .education-card>ul {
+        padding-left: 20px;
+    }
+    .edu-description {
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .edu-date {
+        position: absolute;
+
+        top: 5px;
+        right: 15px;
+    }
+    .education-card>ul {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .education-content {
+        width: 75%;
+        margin: auto;
+    }
+    .education-card>ul {
+        margin: 0;
+    }
+}
