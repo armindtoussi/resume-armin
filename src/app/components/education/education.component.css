@@ -42,6 +42,8 @@
     margin-bottom: 50px;
 }
 
+/* Media Queries */
+
 @media screen and (min-width: 320px) {
 
     .education-card>h4 {
