@@ -1,0 +1,35 @@
+
+.project-content>h1 {
+    margin-bottom: 40px;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.container>div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+hr {
+    border: 1px solid #F4A460;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.oden-project {
+    width: 300px;
+    float: left;
+}
+
+
+@media screen and (min-width: 992px) {
+    .project-content { 
+        width: 75%;
+        margin: auto;
+    }
+}
