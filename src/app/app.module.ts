@@ -7,9 +7,9 @@ import { AboutComponent }       from './components/about/about.component';
 import { LanguagesComponent }   from './components/languages/languages.component';
 import { EducationComponent }   from './components/education/education.component';
 import { WorkHistoryComponent } from './components/work-history/work-history.component';
-import { HobbiesComponent }     from './components/hobbies/hobbies.component';
-import { AppRoutingModule } from './app-routing.component';
-import { HeaderComponent } from './components/header/header.component';
+import { AppRoutingModule }     from './app-routing.component';
+import { HeaderComponent }      from './components/header/header.component';
+import { ProjectsComponent }    from './components/projects/projects.component';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
     LanguagesComponent,
     EducationComponent,
     WorkHistoryComponent,
-    HobbiesComponent
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

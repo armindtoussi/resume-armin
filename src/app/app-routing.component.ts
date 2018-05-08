@@ -6,7 +6,7 @@ import { AboutComponent }       from './components/about/about.component';
 import { EducationComponent }   from './components/education/education.component';
 import { LanguagesComponent }   from './components/languages/languages.component';
 import { WorkHistoryComponent } from './components/work-history/work-history.component';
-import { HobbiesComponent }     from './components/hobbies/hobbies.component';
+import { ProjectsComponent }    from './components/projects/projects.component';
 
 const routes: Routes = [
     {
@@ -26,8 +26,8 @@ const routes: Routes = [
         component: WorkHistoryComponent
     },
     {
-        path: 'hobbies',
-        component: HobbiesComponent
+        path: 'projects',
+        component: ProjectsComponent
     },
     {
         path: "",
