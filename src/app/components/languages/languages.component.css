@@ -1,0 +1,64 @@
+/* keyframe animation definitions. */
+@keyframes progress { 
+    from {width: 0;}
+    to {width: 100%;}
+}
+@-o-keyframes progress {
+    from {width: 0;}
+    to {width: 100%;}
+}
+@-moz-keyframes progress {
+    from {width: 0;}
+    to {width: 100%;}
+}
+@-webkit-keyframes progress {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+hr {
+    border: 1px solid #F4A460;
+    margin-top: 10px;
+}
+
+.progress {
+    border-radius: 0;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.progress-blue {
+    background: #445E93;
+}
+.progress-orange {
+    background: #F4A460;
+}
+.progress-bar {
+    font-size: 2em;
+
+            animation: progress 4s ease-out 1s forwards;
+         -o-animation: progress 4s ease-out 1s forwards;
+       -moz-animation: progress 4s ease-out 1s forwards;
+    -webkit-animation: progress 4s ease-out 1s forwards
+}
+
+.lang-title {
+    margin-bottom: 3px;
+}
+
+@media screen and (min-width: 320px) {
+    .section-header {
+        margin-top: 30px;
+    }
+    .last-element {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-header {
+        margin-top: 0px;
+    }
+    .last-element {
+        margin-bottom: 0px;
+    }
+}
