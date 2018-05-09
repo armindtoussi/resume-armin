@@ -4,13 +4,18 @@
         <article class="row">
             <div class="col-lg-12 project-card">
                 <h3><a href="https://opendatadev.net/" class="project-link">Open Data Developer Network</a></h3>
-                <a href="#oden" data-toggle="collapse" aria-expanded="true" aria-controls="oden" class="caret-toggle">
+                <a href="#oden" data-toggle="collapse" aria-expanded="false" aria-controls="oden" class="caret-toggle"
+                   *ngIf="isCollapsed[0]" (click)="projectCollapse(0)">
                     <span class="oi oi-caret-bottom caret-spacing"></span>
                 </a>
-                <div class="collapse show" id="oden">
+                <a href="#oden" data-toggle="collapse" aria-expanded="false"*ngIf="!isCollapsed[0]"
+                   aria-expanded="false" aria-controls="oden" (click)="projectCollapse(0)" class="caret-toggle">
+                    <span class="oi oi-caret-top caret-spacing"></span>
+                </a>
+                <div class="collapse" id="oden">
                     <hr>
-                    <img src="assets/Oden_Logo_Main.svg" alt="Open Data Developer Network Logo" class="oden-project-img" />
-                    <p class="oden-text">Open Data Developer Network or ODEN for short, is a web application that is built with the purpose
+                    <img src="assets/Oden_Logo_Main.svg" alt="Open Data Developer Network Logo" class="project-img-logo" />
+                    <p class="project-text">Open Data Developer Network or ODEN for short, is a web application that is built with the purpose
                     of making open data easy to access and use for developers.  With governments and businesses releasing 
                     open data to the public at an increasing rate, we are now left with a lack of consistency and a lack of
                     standards governing the datasets.  ODEN is trying to solve these problems and I am lucky enough to be 
@@ -20,7 +25,7 @@
                     </p>
                     <img src="assets/oden_example_4.PNG" alt="ODEN Main Page Header" class="oden-img" />
                     <h4>Technologies</h4>
-                    <p class="oden-text">We were tasked with building a web application so we decided to use Angular 4 as it would meet all our needs 
+                    <p class="project-text">We were tasked with building a web application so we decided to use Angular 4 as it would meet all our needs 
                         of building a modular system, that is easy to modify, and provides us with all the tools we need.  On the backend
                         out CTO wanted to utilize Firebase products for both hosting and the database functionality.  Knowing that we 
                         needed deep query capabilities, we decided that the Firebase Real-Time Database was not the answer for us, though
@@ -28,7 +33,7 @@
                         that Firebase offers. 
                     </p>
                     <h4>Workflow</h4>
-                    <p class="oden-text">We are using Bitbucket to manage the source files of the project. We are also using 4 different servers for
+                    <p class="project-text">We are using Bitbucket to manage the source files of the project. We are also using 4 different servers for
                         development of the project itself. One server for development, one for testing, one for demonstration purposes,
                         and one for production. All new features are built in the development server, and when ready, we push the new 
                         build to the test server for testing. Once we are finished with testing, and we are ready to roll out, we move 
@@ -39,7 +44,7 @@
                     </p>
                     <img src="assets/oden_example_3.PNG" alt="Oden Nav Example" class="oden-img"  />
                     <h4>Product</h4>
-                    <p class="oden-text">If you visit the site, you will see that it's pretty barebones right now as we just want to get the product up 
+                    <p class="project-text">If you visit the site, you will see that it's pretty barebones right now as we just want to get the product up 
                     and running. The goal is for you to be able to search for datasets in various ways and once you have decided upon 
                     something, we provide you with a manifest that you can copy with all the necessary urls for converters and data. 
                     Eventually we will provide applications that will take the manifest and input and output the entire dataset in a 
@@ -47,7 +52,32 @@
                     has no been released to the public yet. 
                     </p>
                     <img src="assets/oden_example_5.PNG" alt="Oden Search Results Example" class="oden-img" />
-                    <p class="oden-text">I look forward to working on this project in the future if I get the chance.</p>
+                    <p class="project-text">I look forward to working on this project in the future if I get the chance.</p>
+                </div>
+            </div>
+        </article>
+        <article class="row">
+            <div class="col-lg-12 project-card">
+                <h3><a href="https://play.google.com/store/apps/details?id=com.headstartmedical.headshapehelper" class="project-link">HeadShape Helper</a></h3>
+                <a href="#headshape" data-toggle="collapse" aria-expanded="false" aria-controls="headshape" class="caret-toggle"
+                   *ngIf="isCollapsed[1]" (click)="projectCollapse(1)">
+                    <span class="oi oi-caret-bottom caret-spacing"></span>
+                </a>
+                <a href="#headshape" data-toggle="collapse" aria-expanded="false" aria-controls="headshape" class="caret-toggle"
+                   *ngIf="!isCollapsed[1]" (click)="projectCollapse(1)">
+                    <span class="oi oi-caret-top caret-spacing"></span>
+                </a>
+                <div class="collapse show" id="headshape">
+                    <hr>
+                    <img src="assets/headshapehelper.png" alt="Headshape Helper Logo" class="project-img-logo headshape-logo-size" />
+                    <p class="project-text">Headshape Helper is a companion app and web app that supplements the services of 
+                        <a href="http://headstartmedical.com/" class="project-link">Headstart Medical</a>. HeadStart Medical 
+                        is a company that specializes in assisting parents who have children with plagiocephaly(meaning 
+                        asymmetric or misshapen heads). The company has leveraged 3D printing technology to come up with 
+                        a proprietary replacement for the old bulky plastic helmets traditionally used to treat this condition. 
+                        The company wanted to include a companion mobile app and web app to assist parents and clinicians 
+                        throughout the treatment process.
+                    </p>
                 </div>
             </div>
         </article>

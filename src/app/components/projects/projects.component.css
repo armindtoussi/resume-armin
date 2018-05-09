@@ -20,7 +20,7 @@ hr {
     margin-bottom: 30px;
 }
 
-.oden-text { 
+.project-text { 
     text-align: justify;
 }
 .project-link {
@@ -48,7 +48,7 @@ hr {
 }
 
 @media screen and (min-width: 320px) {
-    .oden-project-img {
+    .project-img-logo {
         width: 250px;
         float: none;
 
@@ -66,7 +66,7 @@ hr {
 }
 
 @media screen and (min-width: 375px) {
-    .oden-project-img  {
+    .project-img-logo {
         width: 300px;
     }
     .oden-img {
@@ -75,7 +75,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-    .oden-project-img { 
+    .project-img-logo { 
         width: 345px;
     }
 }
@@ -85,10 +85,14 @@ hr {
         width: 75%;
         margin: auto;
     }
-    .oden-project-img { 
+    .project-img-logo { 
         float: left;
 
         margin-right: 20px;
         margin-bottom: 30px;
+    }
+
+    .headshape-logo-size{
+        width: 200px;
     }
 }

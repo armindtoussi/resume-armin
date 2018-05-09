@@ -9,5 +9,12 @@ import { Component } from '@angular/core';
 
 export class ProjectsComponent {
 
+    isCollapsed: boolean[] = [false, true];
+
     constructor() { }
+
+
+    projectCollapse(index: number): void {
+        this.isCollapsed[index] = (this.isCollapsed[index])? false: true;
+    }
 }
