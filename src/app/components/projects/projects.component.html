@@ -3,12 +3,12 @@
     <section class="container">
         <article class="row">
             <div class="col-lg-12 project-card">
-                <h3><a href="https://opendatadev.net/" class="project-link">Open Data Developer Network</a></h3>
+                <h3 class="project-header"><a href="https://opendatadev.net/" class="project-link">Open Data Developer Network</a></h3>
                 <a href="#oden" data-toggle="collapse" aria-expanded="false" aria-controls="oden" class="caret-toggle"
                    *ngIf="isCollapsed[0]" (click)="projectCollapse(0)">
                     <span class="oi oi-caret-bottom caret-spacing"></span>
                 </a>
-                <a href="#oden" data-toggle="collapse" aria-expanded="false"*ngIf="!isCollapsed[0]"
+                <a href="#oden" data-toggle="collapse" aria-expanded="false" *ngIf="!isCollapsed[0]"
                    aria-expanded="false" aria-controls="oden" (click)="projectCollapse(0)" class="caret-toggle">
                     <span class="oi oi-caret-top caret-spacing"></span>
                 </a>
@@ -16,12 +16,12 @@
                     <hr>
                     <img src="assets/Oden_Logo_Main.svg" alt="Open Data Developer Network Logo" class="project-img-logo" />
                     <p class="project-text">Open Data Developer Network or ODEN for short, is a web application that is built with the purpose
-                    of making open data easy to access and use for developers.  With governments and businesses releasing 
-                    open data to the public at an increasing rate, we are now left with a lack of consistency and a lack of
-                    standards governing the datasets.  ODEN is trying to solve these problems and I am lucky enough to be 
-                    part of the team that is trying accomplish this. The idea was to build a system that would allow people 
-                    to access datasets in one simple place, but more importantly a place that offers a converter to convert
-                    these datasets to a usable standardized schema.  
+                        of making open data easy to access and use for developers.  With governments and businesses releasing 
+                        open data to the public at an increasing rate, we are now left with a lack of consistency and a lack of
+                        standards governing the datasets.  ODEN is trying to solve these problems and I am lucky enough to be 
+                        part of the team that is trying accomplish this. The idea was to build a system that would allow people 
+                        to access datasets in one simple place, but more importantly a place that offers a converter to convert
+                        these datasets to a usable standardized schema.  
                     </p>
                     <img src="assets/oden_example_4.PNG" alt="ODEN Main Page Header" class="oden-img" />
                     <h4>Technologies</h4>
@@ -45,11 +45,11 @@
                     <img src="assets/oden_example_3.PNG" alt="Oden Nav Example" class="oden-img"  />
                     <h4>Product</h4>
                     <p class="project-text">If you visit the site, you will see that it's pretty barebones right now as we just want to get the product up 
-                    and running. The goal is for you to be able to search for datasets in various ways and once you have decided upon 
-                    something, we provide you with a manifest that you can copy with all the necessary urls for converters and data. 
-                    Eventually we will provide applications that will take the manifest and input and output the entire dataset in a 
-                    format that lines up with our schema. The pictures you are seeing on this page are sneak peaks at the new build that 
-                    has no been released to the public yet. 
+                        and running. The goal is for you to be able to search for datasets in various ways and once you have decided upon 
+                        something, we provide you with a manifest that you can copy with all the necessary urls for converters and data. 
+                        Eventually we will provide applications that will take the manifest and input and output the entire dataset in a 
+                        format that lines up with our schema. The pictures you are seeing on this page are sneak peaks at the new build that 
+                        has no been released to the public yet. 
                     </p>
                     <img src="assets/oden_example_5.PNG" alt="Oden Search Results Example" class="oden-img" />
                     <p class="project-text">I look forward to working on this project in the future if I get the chance.</p>
@@ -58,7 +58,7 @@
         </article>
         <article class="row">
             <div class="col-lg-12 project-card">
-                <h3><a href="https://play.google.com/store/apps/details?id=com.headstartmedical.headshapehelper" class="project-link">HeadShape Helper</a></h3>
+                <h3 class="project-header"><a href="https://play.google.com/store/apps/details?id=com.headstartmedical.headshapehelper" class="project-link">HeadShape Helper</a></h3>
                 <a href="#headshape" data-toggle="collapse" aria-expanded="false" aria-controls="headshape" class="caret-toggle"
                    *ngIf="isCollapsed[1]" (click)="projectCollapse(1)">
                     <span class="oi oi-caret-bottom caret-spacing"></span>
@@ -67,16 +67,91 @@
                    *ngIf="!isCollapsed[1]" (click)="projectCollapse(1)">
                     <span class="oi oi-caret-top caret-spacing"></span>
                 </a>
-                <div class="collapse show" id="headshape">
+                <div class="collapse" id="headshape">
                     <hr>
                     <img src="assets/headshapehelper.png" alt="Headshape Helper Logo" class="project-img-logo headshape-logo-size" />
                     <p class="project-text">Headshape Helper is a companion app and web app that supplements the services of 
-                        <a href="http://headstartmedical.com/" class="project-link">Headstart Medical</a>. HeadStart Medical 
+                        <a href="http://headstartmedical.com/" class="project-link">HeadStart Medical</a>. HeadStart Medical 
                         is a company that specializes in assisting parents who have children with plagiocephaly(meaning 
                         asymmetric or misshapen heads). The company has leveraged 3D printing technology to come up with 
                         a proprietary replacement for the old bulky plastic helmets traditionally used to treat this condition. 
                         The company wanted to include a companion mobile app and web app to assist parents and clinicians 
-                        throughout the treatment process.
+                        throughout the treatment process. 
+                    </p>
+                    <p class="project-text">The goal was to build an application suite that would allow parents to follow the treatment
+                        schedule for their children easily and effectively. Furthermore, the client wanted a way for parents to 
+                        upload pictures of their children on a daily basis so the clinicians at HeadStart are able to keep records,
+                        and have a way to contact the parents if there is an issue.
+                    </p>
+                    <div class="headstart-img-group">
+                        <figure class="figure">
+                            <img src="assets/Headstart_main_screen.png" alt="HeadStart App Main Landing Screen" class="figure-img headstart-screenshot" />
+                            <figcaption class="figure-caption text-center">Landing Screen</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="assets/Headstart_new_session.png" alt="HeadStart App Next Session Timer Screen" class="figure-img headstart-screenshot" />
+                            <figcaption class="figure-caption text-center">Timer Screen</figcaption>
+                        </figure>
+                    </div>
+                    <h4>Technologies</h4>
+                    <p class="project-text">For this project we were asked to build 3 apps, an Android app, an Ios app, and a 
+                        web app. For the most part the technologies are straight forward, build the Android app in Java, the Ios app 
+                        with Swift, and since this was our first professional project we decided to keep it simple for the web app and 
+                        built it in vanilla Javascript, HTML, and CSS, although we did use bootstrap 3 to frame the project. 
+                        For the database and server side functionality, the client wanted to go with firebase because of the 
+                        functionality the platform offers, the database speed, the ease of making changes, and viewing metrics. 
+                    </p>
+                    <h4>Workflow</h4>
+                    <p class="project-text">We managed the project using Bitbucket for the source files and we used a Kanban style 
+                        Trello board for managing the backlog and buglog. We only used one server and one copy of the database for the 
+                        whole project which did end up causing us some problems with testing and migration to a production state. We 
+                        often worked remotely except for a few days here and there where we were able to secure a temporary office and 
+                        do some work out of there.  We communicated mainly over Slack channels and bi-weekly meetings for iteration 
+                        planning and product updates with the CEO and rest of the development team.  
+                    </p>
+                    <div class="headstart-img-group">
+                        <figure class="figure">
+                            <img src="assets/Headstart_issue_report.png" alt="HeadStart issue report screen" class="figure-img headstart-screenshot" />
+                            <figcaption class="figure-caption text-center">Issue report screen</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="assets/Headstart_howto_pic.png" alt="HeadStart Camera Education screen" class="figure-img headstart-screenshot" />
+                            <figcaption class="figure-caption text-center">How to take picture dialog</figcaption>
+                        </figure>
+                    </div>
+                    <h4>Product</h4>
+                    <p class="project-text">The prototype Android app is in the Google Play Store right now for download. However, 
+                        most of the app's functionality is tied to a user account that you cannot obtain yet as it is still in the early 
+                        stages of the app's life, but you can get a free head shape assessment with the app currently. Ultimately the 
+                        Android app is a logging system. Once you have your account, the app will time your daily treatment sessions 
+                        and prompt you to take pictures for the clinicians over at Heatstart to track and for the parent's own peace of mind. 
+                        You can also log any issues you might come across, there's an education section, and you can take any extra pictures 
+                        you may deem necessary. I think the most important thing I learned on this project as it pertains to Android was working 
+                        with the Camera2 Api which turned out to be quite the challenge. 
+                    </p>
+                    <p class="project-text">I also had a large hand in creating the web application. The web application was a dashboard style
+                        setup with 3 different login types, user, doctor/clinician, and admin for our own purposes. The user type was able to 
+                        login and see the pictures they uploaded and inspect them, they were also able to invite other care givers to use the app when
+                        the parent was not able to, and in the future the client wants to add the ability to alert 
+                        clinicians to any current or immediate issues. The clinician/doctor login type was able to view all their patients, their 
+                        images, and view their progress on a timeline graph as well as being able to invite new patients to the platform that were 
+                        then tied to that doctor or clinician. The admin login type was primarily created to allow HeadStart to invite clinics 
+                        to the platform to use with their patients. 
+                    </p>
+                    <div class="headstart-img-group">
+                        <figure class="figure">
+                            <img src="assets/Headstart_free_assessment_result.png" alt="HeadStart free assessment upload" class="figure-img headstart-screenshot" />
+                            <figcaption class="figure-caption text-center">Free Assessment upload screen</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="assets/Headstart_privacy.png" alt="HeadStart Privacy Agreement" class="figure-img headstart-screenshot" />
+                            <figcaption class="figure-caption text-center">Privacy Agreement screen</figcaption>
+                        </figure>
+                    </div>
+                    <p class="project-text">Ultimately, the web application was not fully built out, it was built, at the time, to provide the complete app userflow.  It 
+                        allowed us to invite clinics who could then invite patients who could then use the mobile apps. All in all it was a 
+                        good project to be a part of. It was a good experience for a new grad who hadn't built anything professional yet. 
+                        I learned a lot on the project and look forward to the possibility of working on it more if they acquire more funding. 
                     </p>
                 </div>
             </div>
