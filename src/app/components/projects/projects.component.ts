@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 
 export class ProjectsComponent {
 
-    isCollapsed: boolean[] = [false, true];
+    isCollapsed: boolean[] = [false, true, true];
 
     constructor() { }
 

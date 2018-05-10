@@ -156,5 +156,67 @@
                 </div>
             </div>
         </article>
+        <article class="row">
+            <div class="col-lg-12 project-card">
+                <h3 class="project-header"><a href="https://github.com/drwatley/ContactBook" class="project-link">Contact Book</a></h3>
+                <a href="#contact" data-toggle="collapse" aria-expanded="false" aria-controls="contact" class="caret-toggle"
+                    *ngIf="isCollapsed[2]" (click)="projectCollapse(2)">
+                    <span class="oi oi-caret-bottom caret-spacing"></span>
+                </a>
+                <a href="#contact" data-toggle="collapse" aria-expanded="false" aria-controls="contact" class="caret-toggle"
+                    *ngIf="!isCollapsed[2]" (click)="projectCollapse(2)">
+                    <span class="oi oi-caret-top caret-spacing"></span>
+                </a>
+                <div class="collapse show" id="contact">
+                    <hr>
+                    <p class="project-text">Contact Book is just a simple Android application that I built for practice with 
+                        some Android and programming concepts. It's a simple address book application that allows you to add,
+                        edit, view, and remove contacts. It has a very simple UI as this is not an application that I intended 
+                        to release on the Play Store, it was simply a practice application. 
+                    </p>
+                    <h4>Concepts</h4>
+                    <p class="project-text">I had some concepts in mind that I wanted to practice when I started building this 
+                        application and some that cropped up while I was building it.
+                    </p>
+                    <ul class="">
+                        <li>Recycler View</li>
+                        <li>Custom Recycler Adapter</li>
+                        <li>SQLite Database Contracts</li>
+                        <li>SQLite CRUD with Content Provider</li>
+                        <li>URI Scheme for Content Provider</li>
+                        <li>Builder Pattern</li>
+                    </ul>
+                    <p class="project-text">This is a general list of the things that I wanted work on learning. I focused especially 
+                        on the Content Provider in conjuntion with Cursor Loader and the Recycler Adapter. I have also been reading 
+                        Clean Code by Robert C. Martin, and was on the chapter about naming conventions. So I also tried to focus on 
+                        creating good naming conventions in my application. 
+                    </p>
+                    <h4>Challenges</h4>
+                    <p class="project-text">I did face some challenges during this build. I had some trouble using the Cursor Loader 
+                        to load data and inject it into the adapter so it could adhere to the view. However, after some reading of 
+                        documentation and Googling, I was able to find the solution to the problem. The other area of concern was 
+                        URI's for the content provider. I kept having issues with the Content Provider not being able to match the 
+                        URI that I was trying to use to access data. Turns out that I was making calls to the content provider 
+                        incorrectly. I was directly calling methods from the content provider when I was supposed to be using
+                        <code>getContentResolver()</code> and then calling the necessary method like update or insert.
+                    </p>
+                    <p class="project-text">When I started this project I knew the importance of programming patterns, however, 
+                        I had yet to really use that many. When I got to the point where I needed constructors with a variable 
+                        number of arguments, I wasn't sure how to proceed. Sure I could overload constructors, but these classes 
+                        had a lot of instance variables and that wasn't g oing to be practical. After a short amount of research 
+                        I realized I can solve this problem with the Builder Pattern. I originally had no intentions of using any 
+                        programming patters, however, I was able to learn this one and realize the importance for learning and 
+                        implementing programming patterns. 
+                    </p>
+                    <p class="project-text">All in all, I learned quite a lot about Android development and programming concepts 
+                        in general. I chose not to release this applicaiton because I didn't want to invest the time it takes 
+                        to polish the app up to a level where it is ready for public use as there were other projects that I wanted 
+                        to work on. Furthermore, there are plenty of applications on the Play Store that serve the functions of this 
+                        app. 
+                    </p>
+                </div>
+            </div>
+        </article>
     </section>
 </main>
+
