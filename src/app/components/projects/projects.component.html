@@ -12,7 +12,7 @@
                    aria-expanded="false" aria-controls="oden" (click)="projectCollapse(0)" class="caret-toggle">
                     <span class="oi oi-caret-top caret-spacing"></span>
                 </a>
-                <div class="collapse" id="oden">
+                <div class="collapse show" id="oden">
                     <hr>
                     <img src="assets/Oden_Logo_Main.svg" alt="Open Data Developer Network Logo" class="project-img-logo" />
                     <p class="project-text">Open Data Developer Network or ODEN for short, is a web application that is built with the purpose
@@ -348,7 +348,7 @@
                 </div>
             </div>
         </article>
-        <article class="row">
+        <article class="row" id="conways">
             <div class="col-lg-12 project-card">
                 <h3 class="project-header"><a href="https://github.com/drwatley/GameOfLife" class="project-link">Conway's Game of Life</a></h3>
                 <a href="#conway" data-toggle="collapse" aria-expanded="false" aria-controls="conway" class="caret-toggle"
@@ -359,7 +359,7 @@
                     *ngIf="!isCollapsed[5]" (click)="projectCollapse(5)">
                     <span class="oi oi-caret-top caret-spacing"></span>
                 </a>
-                <div class="collapse show" id="conway">
+                <div class="collapse" id="conway">
                     <hr>
                     <p class="project-text">During the second term of school we were tasked with creating a simple version 
                         of Conways Game of Life. A lot of programmers have probably created their own version of this 
@@ -378,7 +378,23 @@
                         was to make this a well designed modular program that can me modified and extended easily.
                     </p>
                     <h4>Challenges</h4>
-                    <p class="project-text">
+                    <p class="project-text">At the time I was a much less experienced programmer and faced some 
+                        challenges that seem simple now. I hadn't had my algorithms class yet and was unfamiliar 
+                        with how to approach problems that required a more efficient algorithm. One of the major 
+                        challenges for me was producing an efficient way to check all adjacent squares regardless 
+                        of position on the board. I was checking all possible adjacent squares based on position 
+                        of the square in the board all in an if/else statement which is very inefficient. So if 
+                        a square was in a corner it would have a different set of rules than a square on an edge 
+                        and so on. This created a huge ugly code block that was inefficient and created problems 
+                        running the program. After seeking help I found out how I could use a nested for loop 
+                        from -1 to +1 to check all positions around for every square and then just checked to 
+                        make sure that a choice was actually physically possible(ie. not off the edge of my board).
+                        This was the biggest challenge for me, other than that the project was relatively trivial.
+                    </p>
+                    <p class="project-text"> All in all it was a fun project to work on and exposed me to Conways 
+                        Game of Life, and also helped me learn about these types of projects. Learning how to 
+                        find other games and projects like this I can work on as well as solving problems throuh 
+                        finding standard algorithms and learning how to figure out your own algorithms.
                     </p>
                 </div>
             </div>
