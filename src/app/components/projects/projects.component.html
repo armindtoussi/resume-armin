@@ -167,7 +167,7 @@
                     *ngIf="!isCollapsed[2]" (click)="projectCollapse(2)">
                     <span class="oi oi-caret-top caret-spacing"></span>
                 </a>
-                <div class="collapse show" id="contact">
+                <div class="collapse" id="contact">
                     <hr>
                     <p class="project-text">Contact Book is just a simple Android application that I built for practice with 
                         some Android and programming concepts. It's a simple address book application that allows you to add,
@@ -212,7 +212,173 @@
                         in general. I chose not to release this applicaiton because I didn't want to invest the time it takes 
                         to polish the app up to a level where it is ready for public use as there were other projects that I wanted 
                         to work on. Furthermore, there are plenty of applications on the Play Store that serve the functions of this 
-                        app. 
+                        app. I have no current plans to do more work on this app. 
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="row">
+            <div class="col-lg-12 project-card">
+                <h3 class="project-header"><a href="https://github.com/drwatley/TutoringApp" class="project-link">Tutor App</a></h3>
+                <a href="#tutor" data-toggle="collapse" aria-expanded="false" aria-controls="tutor" class="caret-toggle"
+                    *ngIf="isCollapsed[3]" (click)="projectCollapse(3)">
+                    <span class="oi oi-caret-bottom caret-spacing"></span>
+                </a>
+                <a href="#tutor" data-toggle="collapse" aria-expanded="false" aria-controls="tutor" class="caret-toggle"
+                    *ngIf="!isCollapsed[3]" (click)="projectCollapse(3)">
+                    <span class="oi oi-caret-top caret-spacing"></span>
+                </a>
+                <div class="collapse" id="tutor">
+                    <hr>
+                    <p class="project-text">During my last term, term three, we took an Android mobile development course. 
+                        During this course we were asked to group up in threes and tasked with designing and prototyping 
+                        an Android app with the theme of information. My group came up with the idea of an app that students 
+                        can log into and be matched with another student that can either offer them peer tutoring or 
+                        be tutored by a peer. We thought that by facilitating matching students with other students 
+                        that can help them get help quicker and more easily than the services offered by the school.
+                    </p>
+                    <h4>The Build</h4>
+                    <p class="project-text">We used our project management and design skills gained from the previous 
+                        project and mocked up some UI/UX designs as well as a basic outline for how the app would work 
+                        from a technical standpoint. We were coding for Android so, obviously, it was to be written in
+                        Java. We also knew that we needed to have a cloud based database service rather than an on-board
+                        database service like SQLite. After some research we ended up using MongoDB and accessed it 
+                        using Ion. Which all sounds great except we weren't able to finish and had issues with 
+                        asynchronous tasks to access the database. We were able to get the database access working 
+                        and loading to the phone and emulator, but we weren't able to finish the main matching part 
+                        of the app. 
+                    </p>
+                    <p class="project-text">I was responsible for building the main UI framework of the application. I used 
+                        a single main activity and housed inside it a swipe tab navigation that had fragments nested 
+                        inside it. Each of the 3 fragments that I created served as a major page of the application. 
+                        Tab 1 housed the search/match results for people searching to be tutored, tab 2 housed the 
+                        search/match results for people that were looking for people to tutor, and the final tab 
+                        housed our options page which had various options. I also added the business logic behind 
+                        the UI to handle the account creation and the list views displaying information.
+                    </p>
+                    <h4>Challenges</h4>
+                    <p class="project-text">The main challenge of this project was connection to the database
+                        and downloading information asynchronously so the app wouldn't lock up while the 
+                        database was being accessed. While we were finally able to get this to work, we 
+                        accomplished it so late we had no time to finalize the matching process of the 
+                        applicaton. In hindsight, we should have worked on this much earlier, researched 
+                        it sooner, and developed a solution before the last 2 weeks of the term. Problem 
+                        was, as it always is, time and the lack of it. We have 7 courses and just get
+                        absolutely swamped in the last month of the term. We took it far too easy early 
+                        in the term and if I could go back I would attack this project much earlier so we
+                        had the time to complete it to our satisfaction. Lastly, we never were able to 
+                        come up with good branding for this project, unlike our previous project, Reactor, 
+                        we just didn't have a good name, and didn't get to branding it with a nice logo and so on.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="row">
+            <div class="col-lg-12 project-card">
+                <h3 class="project-header"><a href="https://github.com/drwatley/project2910"  class="project-link">Reactor</a></h3>
+                <a href="#reactor" data-toggle="collapse" aria-expanded="false" aria-controls="reactor" class="caret-toggle"
+                    *ngIf="isCollapsed[4]" (click)="projectCollapse(4)">
+                    <span class="oi oi-caret-bottom caret-spacing"></span>
+                </a>
+                <a href="#reactor" data-toggle="collapse" aria-expanded="false" aria-controls="reactor" class="caret-toggle"
+                    *ngIf="!isCollapsed[4]" (click)="projectCollapse(4)">
+                    <span class="oi oi-caret-top caret-spacing"></span>
+                </a>
+                <div class="collapse" id="reactor">
+                    <hr>
+                    <img src="assets/reactor_logo.png" alt="Reactor Logo" class="project-img-logo reactor-logo-size" />
+                    <p class="project-text">Reactor was a game that me and my team/friends built during a Projects course 
+                        at BCIT. The concept of the course is we build something from scratch starting from the design 
+                        phase all the way to testing and deployment with the main goal of the course being project management. 
+                        We were introduced to many key project concepts including scrum, design, documentation, testing, git, 
+                        and more. We were given basic guidelines by the teachers like the theme(brain games) and we were also 
+                        given challenges during some of the weeks for the duration of the five week course.
+                    </p>
+                    <h4>What is Reactor?</h4>
+                    <p class="project-text">Reactor is a single player game that involves the player solving periodic mini-games
+                        while trying to keep the overall heat of the reactor down to avoid a meltdown. It's a basic mini-game
+                        survival concept in which we wanted to improve players' congnitive functions like multitasking, speed,
+                        and quick thinking skills. The game board is a honey comb that consists of 7 hexagons each housing 
+                        a mini-game, and when the game starts one of the hexagons wwill be highlight and you can click to expand it.
+                        You will be presented with a puzzle which you need to solve to move on. There is a timer for each game that 
+                        opens up and the overall goal is to manage multiple games each with their own timer for completion. If you are 
+                        unable to complete the game within the timer, the reactor heat will go up until it reaches a meltdown point, 
+                        and the game ends. 
+                    </p>
+                    <h4>Weekly Challenges</h4>
+                    <p class="project-text">Throughout the weeks, as I said, we were given challenges 
+                        to achieve. The challenges were include a non-local scoreboard, include achievements, and include a 
+                        tutorial section for new users. This was done to simulate a real work enivronment where things can 
+                        change quickly whether it be a client changing their mind or a higher up making a change in the product. 
+                        It was really fun to do though.
+                    </p>
+                    <h4>Technologies</h4>
+                    <p class="project-text">We were required to use web technologies to create this game, so we knew we had to 
+                        use HTML and CSS as a minimum, but of course javascript would be required as well. Since we knew we would
+                        have a lot of animation and hiding of elements, we decided to utilize JQuery as well to making our lives easier.
+                        We also weren't allowed to use any game engines or frameworks. In hindsight, although using JQuery made the 
+                        game easy to make, it also created some optimization problems for mobile phones and so on. All in all JQuery 
+                        wasn't a horrible choice, but it definitely could have been better. There were issues with JQuery and Android
+                        phones for some reason we weren't able to determine. We also ended up creating our own icons and branding 
+                        in Photoshop but what was even better was creating our own theme music and sound effects to go with the 
+                        game, I was quite proud of that aspect.
+                    </p>
+                    <h4>Challenges</h4>
+                    <p class="project-text">The major challenges were not really product related but team and project management
+                        related. This was my first time building a real product as part of a team using project methodologies 
+                        like Scrum. We adjusted quickly to having daily Scrum stand up meetings and discussion what we did and 
+                        didn't do for that day and the previous day. However, the challenging aspect of it was designing and 
+                        documenting that process as a cohesive unit. Futhermore, keeping everyone on the same page for the 
+                        design and the exection was definitely a big challenge for us, but we pressed forward and learned a 
+                        lot. Weekly class presentations helped us stay on track and gain crucial feedback to both our product 
+                        and our process. Learning about and using task lists and task list websites like Trello were vital to our success.
+                    </p>
+                    <p class="project-text">We focused so much on the main product that we neglected the tutorial section until 
+                        the last minute. Therefore, the tutorial section really isn't completed to the level of polish that we 
+                        would like, but for our first project, and for only 5 weeks we were very satisfied.
+                    </p>
+                    <h4>Conclusion</h4>
+                    <p class="project-text">One major thing that i learned from this project is that the planning phase 
+                        is everything as it relates to the outcome of a project. Things can change and the client may 
+                        change their mind on some matters, but if you are well organized and you have planned well with 
+                        changes in mind, you can weather that storm with relative ease compared to not preparing for the 
+                        possiblity of change. Lastly I should note that we were voted by our peers and teachers as having
+                        the best game of the course.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="row">
+            <div class="col-lg-12 project-card">
+                <h3 class="project-header"><a href="https://github.com/drwatley/GameOfLife" class="project-link">Conway's Game of Life</a></h3>
+                <a href="#conway" data-toggle="collapse" aria-expanded="false" aria-controls="conway" class="caret-toggle"
+                    *ngIf="isCollapsed[5]" (click)="projectCollapse(5)">
+                    <span class="oi oi-caret-bottom caret-spacing"></span>
+                </a>
+                <a href="#conway" data-toggle="collapse" aria-expanded="false" aria-controls="conway" class="caret-toggle"
+                    *ngIf="!isCollapsed[5]" (click)="projectCollapse(5)">
+                    <span class="oi oi-caret-top caret-spacing"></span>
+                </a>
+                <div class="collapse show" id="conway">
+                    <hr>
+                    <p class="project-text">During the second term of school we were tasked with creating a simple version 
+                        of Conways Game of Life. A lot of programmers have probably created their own version of this 
+                        or at the very least heard about it. It's a good exercise for an intermediate programmer I think. 
+                    </p>
+                    <h4>Concept</h4>
+                    <p class="project-text">We were given some code to go with this assignment which included, a 
+                        resizeable window which holds the game board, and the frame for the game board but it 
+                        was not populated nor was there a grid system in play. We had to implement the grid part 
+                        of the game board as well as implement the necessary classes to represent the vegetation 
+                        and animals as well as the clicking functionality for turns to take place. The animals 
+                        included were herbivores, carnivores and onmivores. The goal was to have one click on 
+                        the board be one turn and have the animals move to empty adjacent squares or squares 
+                        in which the animal can eat what is in that adjacent square. The movement choice is all 
+                        random and based on what the animal can eat and what obstructions are there. The goal 
+                        was to make this a well designed modular program that can me modified and extended easily.
+                    </p>
+                    <h4>Challenges</h4>
+                    <p class="project-text">
                     </p>
                 </div>
             </div>
