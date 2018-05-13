@@ -1,70 +1,85 @@
 <main class="education-content">
     <h1>Education</h1>
     <section class="container">
-        <article class="row">
-            <div class="col-lg-12 education-card">
-                <h4>British Columbia Institute of Technology</h4>
-                <p class="edu-date">2015-2017</p>
-                <hr>
-                <h5><a href="https://www.bcit.ca/study/programs/5500dipma" class="school-link">Computer Systems Technology</a></h5>
-                <p class="edu-description">BCIT's CST is a two-year diploma program that combines computer 
-                   systems theory with hands-on practical experience in software development. 
-                   Some highlights of my time there include:
-                </p>
-                <ul>
-                    <li>Graduated with an average GPA of 85</li>
-                    <li>Managed 11 person class project that revolved around designing and building an enterprise application</li>
-                    <li>Voted peer best practicum project end of term 2</li>
-                </ul>
+        <div class="row">
+            <div class="col-lg-9">
+                <article class="row">
+                    <div class="col-lg-12 education-card">
+                        <h4 id="bcit">British Columbia Institute of Technology</h4>
+                        <p class="edu-date">2015-2017</p>
+                        <hr>
+                        <h5><a href="https://www.bcit.ca/study/programs/5500dipma" class="school-link">Computer Systems Technology</a></h5>
+                        <p class="edu-description">BCIT's CST is a two-year diploma program that combines computer 
+                            systems theory with hands-on practical experience in software development. 
+                            Some highlights of my time there include:
+                        </p>
+                        <ul>
+                            <li>Graduated with an average GPA of 85</li>
+                            <li>Managed 11 person class project that revolved around designing and building an enterprise application</li>
+                            <li>Voted peer best practicum project end of term 2</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="row education-card-spacing">
+                    <div class="col-lg-12 education-card">
+                        <h4 id="capu">Capilano University</h4>
+                        <p class="edu-date">2013-2014</p>
+                        <hr>
+                        <h5><a href="https://www.capilanou.ca/abe/" class="school-link">Adult Basic Education</a></h5>
+                        <p class="edu-description">The ABE program enables you to upgrade your knowledge of English, 
+                            Mathematics, Biology, Chemistry, Physics, Computers and Study Skills. Highlights include:
+                        </p>
+                        <ul>
+                            <li>Won Jim Cooke Award for outstanding academic performance with GPA of 4.15</li>
+                            <li>Completed high school course upgrades for entry to BCIT as well as completing high school diploma</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="row education-card-spacing">
+                    <div class="col-lg-12 education-card">
+                        <h4 id="vcc">Vancouver Community College</h4>
+                        <p class="edu-date">2007-2009</p>
+                        <hr>
+                        <h5><a href="http://www.vcc.ca/programscourses/program-areas/culinary-and-baking/culinary-arts-cook-apprentice/" 
+                            class="school-link">Culinary Arts Apprentice</a></h5>
+                        <p class="edu-description">A registered culinary apprentice with the Industry Training Authority(ITA), I did most of most 
+                            of my training on the job however, as part of the apprentice program I attended VCC for further apprentice training as 
+                            per the ITA Red Seal Program. 
+                        </p>
+                        <ul>
+                            <li>Completed program levels 1 and 2</li>
+                            <li>Registered over 7000 hours in the program</li>
+                            <li>Over 10 years of culinary experience in various roles</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="row education-card-spacing ">
+                    <div class="col-lg-12 education-card last-card">
+                        <h4 id="sss">Sutherland Secondary School</h4>
+                        <p class="edu-date">1998-2002</p>
+                        <hr>
+                        <p>Sutherland was the secondary school I attended when I was a teenager. I did not complete high school
+                            at the time, however, I was able to complete my diploma later at Capilano University. My highlights 
+                            at Sutherland include:
+                        </p>
+                        <ul>
+                            <li>School Service Award in 2001 for basketball team managerial duties and other services</li>
+                            <li>School Performance Award for achieving GPA of 85 or higher in 2001</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article class="row education-card-spacing">
-            <div class="col-lg-12 education-card">
-                <h4>Capilano University</h4>
-                <p class="edu-date">2013-2014</p>
-                <hr>
-                <h5><a href="https://www.capilanou.ca/abe/" class="school-link">Adult Basic Education</a></h5>
-                <p class="edu-description">The ABE program enables you to upgrade your knowledge of English, 
-                   Mathematics, Biology, Chemistry, Physics, Computers and Study Skills. Highlights include:
-                </p>
-                <ul>
-                    <li>Won Jim Cooke Award for outstanding academic performance with GPA of 4.15</li>
-                    <li>Completed high school course upgrades for entry to BCIT as well as completing high school diploma</li>
-                </ul>
+            <div class="col-lg-3">
+                <aside class="side-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a [routerLink]="['/education']" fragment="bcit" class="school-link side-link">BCIT</a></li>
+                        <li><a [routerLink]="['/education']" fragment="capu" class="school-link side-link">CapU</a></li>
+                        <li><a [routerLink]="['/education']" fragment="vcc" class="school-link side-link">VCC</a></li>
+                        <li><a [routerLink]="['/education']" fragment="sss" class="school-link side-link">Sutherland</a></li>
+                    </ul>
+                </aside>
             </div>
-        </article>
-        <article class="row education-card-spacing">
-            <div class="col-lg-12 education-card">
-                <h4>Vancouver Community College</h4>
-                <p class="edu-date">2007-2009</p>
-                <hr>
-                <h5><a href="http://www.vcc.ca/programscourses/program-areas/culinary-and-baking/culinary-arts-cook-apprentice/" 
-                    class="school-link">Culinary Arts Apprentice</a></h5>
-                <p class="edu-description">A registered culinary apprentice with the Industry Training Authority(ITA), I did most of most 
-                    of my training on the job however, as part of the apprentice program I attended VCC for further apprentice training as 
-                    per the ITA Red Seal Program. 
-                </p>
-                <ul>
-                    <li>Completed program levels 1 and 2</li>
-                    <li>Registered over 7000 hours in the program</li>
-                    <li>Over 10 years of culinary experience in various roles</li>
-                </ul>
-            </div>
-        </article>
-        <article class="row education-card-spacing ">
-            <div class="col-lg-12 education-card last-card">
-                <h4>Sutherland Secondary School</h4>
-                <p class="edu-date">1998-2002</p>
-                <hr>
-                <p>Sutherland was the secondary school I attended when I was a teenager. I did not complete high school
-                   at the time, however, I was able to complete my diploma later at Capilano University. My highlights 
-                   at Sutherland include:
-                </p>
-                <ul>
-                    <li>School Service Award in 2001 for basketball team managerial duties and other services</li>
-                    <li>School Performance Award for achieving GPA of 85 or higher in 2001</li>
-                </ul>
-            </div>
-        </article>
+        </div>
     </section>
 </main>
