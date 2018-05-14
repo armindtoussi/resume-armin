@@ -42,6 +42,20 @@
     margin-bottom: 50px;
 }
 
+.side-nav {
+    position: fixed;
+
+    padding-left: 20px;
+}
+.side-nav>ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.size-link {
+    list-style-type: none;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 320px) {
@@ -67,14 +81,21 @@
         width: 70%;
         margin: 0 auto;
     }
+
+    .side-nav {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .work-content {
-        width: 75%;
         margin: auto;
     }
     .work-card>ul {
         margin: 0;
+    }
+
+    .side-nav {
+        display: block;
     }
 }
