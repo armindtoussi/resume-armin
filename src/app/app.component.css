@@ -1,6 +1,7 @@
 
 .container  {
     background: #FEFCFD;
+    position:relative;
 }
 
 nav {

@@ -10,6 +10,7 @@ import { WorkHistoryComponent } from './components/work-history/work-history.com
 import { AppRoutingModule }     from './app-routing.component';
 import { HeaderComponent }      from './components/header/header.component';
 import { ProjectsComponent }    from './components/projects/projects.component';
+import { SiteFooterComponent }  from './components/footer/sitefooter.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ProjectsComponent }    from './components/projects/projects.component';
     LanguagesComponent,
     EducationComponent,
     WorkHistoryComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SiteFooterComponent
   ],
   imports: [
     BrowserModule,

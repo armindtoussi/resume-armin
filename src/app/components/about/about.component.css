@@ -1,4 +1,7 @@
 
+.about-content { 
+    /* height: 100vh; */
+}
 
 .info-link {
     color: #445E93;
@@ -124,3 +127,4 @@
         font-size: 1.2em;
     }
 }
+
