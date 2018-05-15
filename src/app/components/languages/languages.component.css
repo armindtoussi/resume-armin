@@ -16,6 +16,10 @@
     to {width: 100%;}
 }
 
+.languages-content {
+    padding-bottom: 70px;
+}
+
 hr {
     border: 1px solid #F4A460;
     margin-top: 10px;

@@ -2,6 +2,7 @@
 .container  {
     background: #FEFCFD;
     position:relative;
+    min-height: 97vh;
 }
 
 nav {
