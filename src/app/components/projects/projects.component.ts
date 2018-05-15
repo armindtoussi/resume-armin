@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component }       from '@angular/core';
+import { fadeInOneSecond } from '../../animations';
 
 
 @Component({
     selector: 'projects',
     templateUrl: './projects.component.html',
-    styleUrls: ['./projects.component.css']
+    styleUrls: ['./projects.component.css'],
+    animations: [
+        fadeInOneSecond
+    ]
 })
 
 export class ProjectsComponent {

@@ -1,11 +1,15 @@
 import { Component }             from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Subscription }          from 'rxjs/Subscription';
+import { fadeInOneSecond }       from '../../animations';
 
 @Component({
     selector: 'education',
     templateUrl: './education.component.html',
-    styleUrls: ['./education.component.css']
+    styleUrls: ['./education.component.css'],
+    animations: [
+        fadeInOneSecond
+    ]
 })
 
 export class EducationComponent { 
