@@ -2,4 +2,4 @@
 
 My personal resume website. 
 
-Built using ng4. 
+Built using ng2 

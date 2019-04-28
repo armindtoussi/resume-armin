@@ -30,12 +30,20 @@
                         <figcaption class="figure-caption text-center">Oden Landing Page Redesign</figcaption>
                     </div>
                     <h4>Technologies</h4>
-                    <p class="project-text">We were tasked with building a web application so we decided to use Angular 4 as it would meet all our needs 
-                        of building a modular system, that is easy to modify, and provides us with all the tools we need.  On the backend
+                    <p class="project-text">We were tasked with building a web application so we decided to use Angular 2 as it would meet all our needs 
+                        of building a modular system that is easy to modify, and provides us with all the tools we need.  On the backend
                         out CTO wanted to utilize Firebase products for both hosting and the database functionality.  Knowing that we 
                         needed deep query capabilities, we decided that the Firebase Real-Time Database was not the answer for us, though
                         we do us it in some places, instead we decided on trying out the new Firestore document collection based database 
-                        that Firebase offers. 
+                        that Firebase offers. That being said we do use Firebase Real-Time Database for some things. 
+                    </p>
+                    <p>Another thing I was tasked with building was a standalone authentication server for our website services. 
+                        In order to integrate with Firebase, I needed the server needed to issue signed JSON Web Tokens(JWTs) to 
+                        the requesting user, and sign the user in using this token via the Firebase authentication module.  I wrote 
+                        this server in Javascript using NodeJS, and the Express framework. The server is hosted with a Canadian 
+                        cloud based service provider, and deployed on a Linux VM using Nginx, primarily as a reverse proxy. This was 
+                        the first server I wrote and i'm quite proud of it, although there are, no doubt, mistakes or things that can 
+                        be improved.  
                     </p>
                     <h4>Workflow</h4>
                     <p class="project-text">We are using Bitbucket to manage the source files of the project. We are also using 4 different servers for
@@ -44,7 +52,7 @@
                         build to the test server for testing. Once we are finished with testing, and we are ready to roll out, we move 
                         the new build over to production for the public to use. We use a proprietary work management system that handles 
                         the backlog, buglog, iteration flows and more. Typically we all work remotely as the company does not have offices
-                        yet, and meetings are done weekly over voice chat, and we meet in person for iteration meetings and SWOT analysis 
+                        yet, meetings are done weekly over voice chat, and we meet in person for iteration meetings and SWOT analysis 
                         when we are finished a major iteration. 
                     </p>
                     <div>
@@ -54,12 +62,10 @@
                         <figcaption class="figure-caption text-center">Oden Landing Page Search Nav Redesign</figcaption>
                     </div>
                     <h4>Product</h4>
-                    <p class="project-text">If you visit the site, you will see that it's pretty barebones right now as we just want to get the product up 
-                        and running. The goal is for you to be able to search for datasets in various ways and once you have decided upon 
+                    <p class="project-text">The goal of ODEN is for you to be able to search for datasets in various ways and once you have decided upon 
                         something, we provide you with a manifest that you can copy with all the necessary urls for converters and data. 
                         Eventually we will provide applications that will take the manifest and input and output the entire dataset in a 
-                        format that lines up with our schema. The pictures you are seeing on this page are sneak peaks at the new build that 
-                        has no been released to the public yet. 
+                        format that lines up with a provided schema. 
                     </p>
                     <div class="last-img">
                         <figure class="figure">
@@ -198,7 +204,7 @@
                         <li>Custom Recycler Adapter</li>
                         <li>SQLite Database Contracts</li>
                         <li>SQLite CRUD with Content Provider</li>
-                        <li>URI Scheme for Content Provider</li>
+                        <li>URI Schema for Content Provider</li>
                         <li>Builder Pattern</li>
                     </ul>
                     <p class="project-text">This is a general list of the things that I wanted work on learning. I focused especially 
